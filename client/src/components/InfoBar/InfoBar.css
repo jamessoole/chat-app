@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #3b6978;
+    /* background: #3b6978; */
+    background: linear-gradient(to bottom right, #4f8a9e 30%, #315663 100%);
     border-radius: 4px 4px 0 0;
     height: 60px;
     width: 100%;
@@ -18,11 +19,7 @@
 
 .rightInnerContainer {
     display: flex;
-    flex: 0.5;
+    flex: 0.1;
     justify-content: flex-end;
-    margin-right: 5%;
-}
-
-.onlineIcon {
-    margin-right: 5%;
+    margin-right: 4%;
 }

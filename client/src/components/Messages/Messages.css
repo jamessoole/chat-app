@@ -1,6 +1,11 @@
 .messages {
-    padding: 5% 0;
+    padding: 3% 0;
     overflow: auto;
     flex: auto;
     /* border: solid 10px red; */
+    /* border: solid purple; */
+    /* border-bottom: purple; */
+    /* border: solid green; */
+
+
 }

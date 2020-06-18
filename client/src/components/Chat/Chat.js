@@ -64,7 +64,7 @@ const Chat = ({ location }) => {
         }
     }
 
-    console.log(message, messages);
+    console.log(`message: ${message}, messages: ${messages}`);
 
     return (
         <div className="outerContainer">
@@ -92,3 +92,8 @@ export default Chat;
 // join button focus
 // https://css-tricks.com/almanac/selectors/f/focus/
 //update url aprse to props instead
+// alternate palettes
+// scroll down button
+//dont update name if same as last person
+// if someone joins, put message in middle, not new text
+// customize scrollbarss
