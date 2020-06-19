@@ -48,6 +48,6 @@ input:focus, textarea:focus, select:focus{
     outline: none;
     cursor: pointer;
 }
-.sendButton:active {
+.sendButton:active, .sendButton:hover {
     background: linear-gradient(to bottom right, #315663, #4f8a9e);
 }

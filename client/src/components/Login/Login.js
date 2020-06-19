@@ -23,8 +23,7 @@ const Join = () => {
 
                 {/* could update with props instead */}
                 <Link 
-                    onClick={event => (!name || !room) ? event.preventDefault() : null}
-                    
+                    onClick={event => (!name || !room) ? event.preventDefault() : null }
                     to={`./chat?name=${name}&room=${room}`}>
                     <button className="button" type="submit">Chat</button>
                 </Link>
@@ -35,4 +34,3 @@ const Join = () => {
 
 export default Join;
 
-// onKeyPress={(event) => event.key === 'Enter' ? sendMessage(event) : null }

@@ -29,10 +29,18 @@ html, body {
     padding: 20px 10px;
     border-radius: 5px;
     background-color: #eee;
-
-
+    overflow: hidden;
+    position: relative;
     /* opacity: 10%; */
+    background: linear-gradient(
+        to bottom right, 
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.13) 10%,
+        rgba(255, 255, 255, 0.5) 70%,
+        rgba(255, 255, 255, 0.0) 100%
+    );
 }
+
 
 .joinInput {
     border-radius: 5px;
@@ -66,6 +74,10 @@ html, body {
     margin-top: 20px;
     cursor: pointer;
     outline: 0;
+    transition: 0.2s ease;
+}
+.button:hover {
+    background: #84a9ac;
 }
 
 /* 
