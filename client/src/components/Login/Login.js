@@ -22,7 +22,7 @@ const Join = () => {
                 /></div>
 
                 {/* could update with props instead */}
-                <Link 
+                <Link tabindex="-1"
                     onClick={event => (!name || !room) ? event.preventDefault() : null }
                     to={`./chat?name=${name}&room=${room}`}>
                     <button className="button" type="submit">Chat</button>

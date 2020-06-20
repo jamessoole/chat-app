@@ -45,9 +45,21 @@ html, body {
 .joinInput {
     border-radius: 5px;
     border: solid transparent;
-    padding: 15px 15px;
+    padding: 10px 15px;
     width: 100%;
     margin-top: 15px;
+    background: #6C757B;
+    color: white;
+    font-size: 1.1em;
+}
+::placeholder {
+    color: rgb(223, 222, 222);
+}
+:-ms-input-placeholder {
+    color: rgb(223, 222, 222);
+}
+::-ms-input-placeholder {
+    color: rgb(223, 222, 222);
 }
 
 .joinLine {
@@ -79,20 +91,7 @@ html, body {
 .button:hover {
     background: #84a9ac;
 }
-
-/* 
-@media (min-width: 320px) and (max-width: 480px) {
-    .joinOuterContainer {
-        height: 100%;
-    }
-
-    .joinInnerContainer {
-        width: 90%;
-    }
-} */
-
 .button:focus {
-    outline: 0;
-    border-radius: 30px;
-    /* this int workinggg */
+    background: linear-gradient(to bottom right, #84a9ac, #204051);
+    width: 40%;
 }

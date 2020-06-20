@@ -89,10 +89,11 @@ export default Chat;
 // fancy input placholder moves
 // error if fields not used in join page
 
-// https://css-tricks.com/almanac/selectors/f/focus/
 // update url parse to props instead
 
 // scroll down button
-// customize scrollbarss
+// customize scrollbars
 
 //different rooms
+
+//typingggggg indicatorrrr

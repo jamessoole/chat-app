@@ -1,11 +1,8 @@
 .form {
     display: flex;
-    /* border-top: 2px solid #D3D3D3; */
-    /* border-top: 2px solid #204051; */
-    /* border-top: linear_gradeint; */
-    /* margin: 0; */
-    /* border: solid green; */
-
+    background: linear-gradient(to bottom right, var(--light-grad1-color), var(--light-grad2-color));
+    border-radius: 10px;
+    margin: 5px 5px;
 }
   
 .input {
@@ -18,11 +15,9 @@
     font-size: 1.2em;
     border-bottom-left-radius: 5px;
     /* border: solid pink; */
-    border-radius: 10px;
-    /* background-color: #d1cac3; */
+    border-radius: 5px;
     background: linear-gradient(to bottom right, var(--light-grad1-color), var(--light-grad2-color));
     color: var(--darkest-color);
-    /* border-bottom: 2px solid #204051; */
 
 }
 
@@ -43,10 +38,10 @@ input:focus, textarea:focus, select:focus{
     display: inline-block;
     border: none;
     width: 20%;
-    border-radius: 5px;
+    border-radius: 7px;
     outline: none;
     cursor: pointer;
 }
-.sendButton:active, .sendButton:hover {
+.sendButton:active, .sendButton:hover, .sendButton:focus {
     background: linear-gradient(to bottom right, var(--dark-grad2-color), var(--dark-grad1-color));
 }
