@@ -3,11 +3,21 @@
 .messageBubble {
   border-radius: 20px;
   padding: 0px 10px;
-  color: white;
+  color: #fff;
   display: inline-block;
   max-width: 80%;
   /* border: solid green; */
   height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.1s ease;
+}
+.messageBubble:hover {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* text in bubble */
@@ -45,7 +55,7 @@
 .sentText {
   display: flex;
   align-items: center;
-  color: #828282;
+  color: var(--gray-color);
   letter-spacing: 0.5px;
   line-height: 0.1em;
   /* border: solid pink; */
@@ -56,9 +66,6 @@
   line-height: normal;
 }
 
-.noName {
-  border: solid pink;
-}
   
 .pl-10 {
   padding-left: 10px;
@@ -84,13 +91,13 @@
 }
 
 .colorDark {
-  color: #204051;
+  color: var(--darkest-color);
 }
 
 .backgroundBlue {
-  background: #84a9ac;
+  background: var(--lighterer-color);
 }
 
 .backgroundLight {
-  background: #e7dfd5;
+  background: var(--lightest-color);
 }

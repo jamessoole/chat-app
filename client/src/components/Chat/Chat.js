@@ -90,8 +90,7 @@ export default Chat;
 // error if fields not used in join page
 
 // https://css-tricks.com/almanac/selectors/f/focus/
-// update url aprse to props instead
-// alternate palettes
+// update url parse to props instead
 
 // scroll down button
 // customize scrollbarss

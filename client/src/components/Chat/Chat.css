@@ -1,19 +1,58 @@
+/* main palette */
 /* https://colorhunt.co/palette/192310 */
-/* https://colorhunt.co/palette/192115 */
+/* alternate palette */
+/* https://colorhunt.co/palette/183823*/
 
-/* curently using top palette */
-/* darkest:  #102029*/
-/* dark: #204051 */
-/* lighter: #3b6978 */
-/* ligherer: #84a9ac */
-/* 'white': #e7dfd5 */
+
+:root {
+    /* background, input and their text */
+    --darkest-color: #102029;
+    --dark-color: #204051;
+    --lighter-color: #3b6978;
+    /* your message bubble */
+    --lighterer-color: #84a9ac;
+    /* their message bubble */
+    --lightest-color: #e7dfd5;
+    /* infobar and send */
+    --dark-grad1-color: #4f8a9e;
+    --dark-grad2-color: #315663;
+    /* input */
+    --light-grad1-color: #e7dfd5;
+    --light-grad2-color: #ada8a2;
+    /* admin messages */
+    --gray-color: #828282;
+
+
+}
+.alternateColors {
+    /* background, input and their text */
+    --darkest-color: #88404d;
+    --dark-color: #BB596B;
+    --lighter-color: #F96D80;
+    /* your message bubble */
+    --lighterer-color: #FF9A76;
+    /* their message bubble */
+    --lightest-color: #FFC4A3;
+    /* infobar and send */
+    --dark-grad1-color: #F96D80;
+    --dark-grad2-color: #BB596B;
+    /* input */
+    --light-grad1-color: #FFC4A3;
+    --light-grad2-color: #FF9A76;
+    /* admin messages */
+    --gray-color: #828282;
+
+}
 
 .outerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #102029;
+    /* background-color: #102029; */
+    background-color: var(--darkest-color);
+
+    transition: 0.2s ease;
 }
   
 .container {

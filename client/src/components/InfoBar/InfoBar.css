@@ -3,23 +3,83 @@
     align-items: center;
     justify-content: space-between;
     /* background: #3b6978; */
-    background: linear-gradient(to bottom right, #4f8a9e 30%, #315663 100%);
+    background: linear-gradient(to bottom right, var(--dark-grad1-color) 30%, var(--dark-grad2-color) 100%);
     border-radius: 4px 4px 0 0;
     height: 60px;
     width: 100%;
 }
   
 .leftInnerContainer {
-    flex: 0.5;
+    flex: 0.8;
+    /* display: flex; */
+    /* align-items: center; */
+    margin-left: 5%;
+    color: #fff;
+    /* border: solid green; */
+
+}
+
+.middleInnerContainer {
+    flex: 0.1;
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    color: white;
+    justify-content: flex-end;
+    /* border: solid blue; */
 }
 
 .rightInnerContainer {
     display: flex;
-    flex: 0.1;
-    justify-content: flex-end;
+    flex: 0.05;
+    justify-content: center;
     margin-right: 4%;
+    padding: 0;
+    /* border: solid salmon; */
+}
+.closeIcon {
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+    mix-blend-mode: darken;
+    /* border: solid pink; */
+}
+.closeIcon:hover {
+    height: 45px;
+}
+
+.colorButton {
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid pink; */
+
+}
+.colorButton:hover {
+    cursor: pointer;
+}
+
+.colorIcon {
+    font-size: 0.1em;
+}
+.sunIcon {
+    width: 40px;
+}
+.sunIcon:hover {
+    transition: 0.1s ease;
+    width : 45px;
+}
+.moonIcon {
+    width: 22px;
+    mix-blend-mode: darken;
+    transition: 0.1s ease;
+}
+.moonIcon:hover {
+    width: 25px;
 }

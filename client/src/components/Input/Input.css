@@ -20,8 +20,8 @@
     /* border: solid pink; */
     border-radius: 10px;
     /* background-color: #d1cac3; */
-    background: linear-gradient(to bottom right, #e7dfd5, #ada8a2);
-    color: #102029;
+    background: linear-gradient(to bottom right, var(--light-grad1-color), var(--light-grad2-color));
+    color: var(--darkest-color);
     /* border-bottom: 2px solid #204051; */
 
 }
@@ -34,8 +34,7 @@ input:focus, textarea:focus, select:focus{
     color: #fff;
     text-decoration: none;
     letter-spacing: 0.5px;
-    background: #3b6978;
-    background: linear-gradient(to bottom right, #4f8a9e, #315663);
+    background: linear-gradient(to bottom right, var(--dark-grad1-color), var(--dark-grad2-color));
 
     padding: 20px;
     margin: 5px 5px;
@@ -49,5 +48,5 @@ input:focus, textarea:focus, select:focus{
     cursor: pointer;
 }
 .sendButton:active, .sendButton:hover {
-    background: linear-gradient(to bottom right, #315663, #4f8a9e);
+    background: linear-gradient(to bottom right, var(--dark-grad2-color), var(--dark-grad1-color));
 }
