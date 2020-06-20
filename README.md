@@ -3,10 +3,7 @@
 Built with React and NodeJS
 
 
-![alt text](https://github.com/jamessoole/chat-app/blob/master/Image1.png?raw=true)
-![alt text](https://github.com/jamessoole/chat-app/blob/master/Image2.png?raw=true)
-![alt text](https://github.com/jamessoole/chat-app/blob/master/Image3.png?raw=true)
-
+![alt text](https://github.com/jamessoole/live-chat-app/blob/master/Write-up/chat-mockup.png)
 
 Features:
 - seperate, concurrent chat rooms
