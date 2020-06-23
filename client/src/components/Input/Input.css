@@ -20,6 +20,9 @@
     color: var(--darkest-color);
 
 }
+.input::placeholder {
+    color: var(--dark-grad1-color);
+}
 
 input:focus, textarea:focus, select:focus{
     outline: none;

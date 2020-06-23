@@ -12,26 +12,30 @@ import TextContainer from '../TextContainer/TextContainer';
 
 let socket;
 
-const Chat = ({ location }) => {
+const Chat = (props) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const ENDPOINT = 'localhost:5000';
+
+    const inputName = props.location.state.inputName;
+    const inputRoom = props.location.state.inputRoom;
+
+
     
     useEffect(() => {
-        const {name, room} = queryString.parse(location.search)
-        // console.log(`name: ${name}`)
-        // console.log(`room: ${room}`)
-
-        setName(name);
-        setRoom(room);
+        // console.log(`name: ${inputName}`)
+        // console.log(`room: ${inputRoom}`)
+ 
+        setName(inputName);
+        setRoom(inputRoom);
 
         socket = io(ENDPOINT);
         // console.log(socket);
 
-        socket.emit('join', { name: name, room: room }, () => {
+        socket.emit('join', { name: inputName, room: inputRoom }, () => {
         //    alert(error);
         });
 
@@ -40,8 +44,8 @@ const Chat = ({ location }) => {
             socket.off();
         }
 
-    }, [ENDPOINT, location.search]);
-    // useEffect runs only if either of these 2 values change
+    }, [ENDPOINT, inputName, inputName]);
+    // useEffect runs only if any of these values change
 
 
     useEffect(() => {
@@ -89,11 +93,6 @@ export default Chat;
 // fancy input placholder moves
 // error if fields not used in join page
 
-// update url parse to props instead
-
-// scroll down button
-// customize scrollbars
-
 //different rooms
 
-//typingggggg indicatorrrr
+//Typing Indicator - have gotten to work, just extremely laggy

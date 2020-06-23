@@ -21,10 +21,12 @@ const Join = () => {
                     onKeyPress={(event) => event.key === 'Enter' ? document.querySelector("button").click() : null } 
                 /></div>
 
-                {/* could update with props instead */}
-                <Link tabindex="-1"
+                <Link tabIndex="-1"
                     onClick={event => (!name || !room) ? event.preventDefault() : null }
-                    to={`./chat?name=${name}&room=${room}`}>
+                    to={{
+                        pathname: './chat',
+                        state: {inputName: name , inputRoom: room}
+                    }}>
                     <button className="button" type="submit">Chat</button>
                 </Link>
             </div>
