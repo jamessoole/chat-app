@@ -57,13 +57,3 @@ app.use(router);
 server.listen(PORT, () => console.log(`Server has started on port ${PORT}`));
 
 
-
-
-
-
-// Possible TODOs
-// pass info with props instead of url query
-// update css
-// move placheolderrs on join page
-// add onKeyPress jor join page, chaneg below
-//  onKeyPress={(event) => event.key === 'Enter' ? sendMessage(event) : null }
